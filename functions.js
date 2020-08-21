@@ -33,24 +33,27 @@ function urlSlug(title) {
 }
 //Combine an Array into a String Using the join Method
 function mendArr(str) {
-   return str.split(/\W/).join(" ");
+   let newArrayOne = str.split(/\W/).join(" ");
+   console.log("mend array function", typeof newArrayOne);
+   return newArrayOne;
 }
 //Split a String into an Array Using the split Method
 
 function splitStr(str) {
    var newStr = str.split(/\W/);
+   console.log(typeof newStr);
+   // returns an array
    return newStr;
 }
 
 //sort an array alphabetically using the sort method
 function sorted(arr) {
+   // letter inputed mustbe strings
    var newArr = arr.sort(function (a, b) {
       return a - b;
    });
    return newArr;
 }
-
-console.log(sorted);
 
 // Use Higher-Order Functions map, filter, or reduce to Solve a Complex Problem
 const squareList = (arr) => {
@@ -146,6 +149,7 @@ var removeWithSliceMethod = function (ind1, ind2) {
    var arrr = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
    var arrr2 = arrr.slice(ind1, ind2);
    console.log(arrr2);
+   return arrr2;
 };
 
 // Return Part of an Array Using the slice Method
