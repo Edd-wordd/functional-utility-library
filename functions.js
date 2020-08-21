@@ -43,11 +43,6 @@ function splitStr(str) {
 }
 
 //sort an array alphabetically using the sort method
-// function sorted(arr) {
-//    return arr.sort(function (a, b) {
-//       return a - b;
-//    });
-// }
 function sorted(arr) {
    var newArr = arr.sort(function (a, b) {
       return a - b;
